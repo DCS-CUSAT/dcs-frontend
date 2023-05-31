@@ -701,7 +701,8 @@ section {
   align-items: center;
   padding: 20px;
   transition: 0.3s;
-  border: 1px solid #eef0ef;
+  border: 2px solid #eef0ef;
+  border-radius: 10px;
 }
 
 .features .icon-box i {
@@ -1568,3 +1569,42 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+/* Vision and Mission */
+.mission-heading {
+  padding-top: 27.5px;
+  color: #3366ff;
+}
+
+.vision-heading {
+  color: #3366ff;
+}
+
+/* Icon boxes for  */
+.about-us-icon-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-us-icon-box {
+  flex: 1;
+  text-align: center;
+  border: 2px solid #eef0ef;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 200px;
+}
+
+.about-us-title {
+  font-weight: bold;
+  color: #3366ff;
+  padding: 10px;
+}
+
+/* 
+Dark-blue -> color: rgb(9, 11, 85);
+*/
