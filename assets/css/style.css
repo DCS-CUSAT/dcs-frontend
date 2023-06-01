@@ -1573,38 +1573,40 @@ section {
 /* Vision and Mission */
 .mission-heading {
   padding-top: 27.5px;
-  color: #3366ff;
+  color: #444444;
 }
 
 .vision-heading {
-  color: #3366ff;
+  color: #444444;
 }
 
-/* Icon boxes for  */
+/* Icon boxes for about-us section */
 .about-us-icon-box-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
 .about-us-icon-box {
-  flex: 1;
+  flex: 1 0 300px;
   text-align: center;
   border: 2px solid #eef0ef;
   border-radius: 15px;
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   height: 200px;
 }
 
 .about-us-title {
   font-weight: bold;
-  color: #3366ff;
+  color: #444444;
   padding: 10px;
 }
 
-/* 
-Dark-blue -> color: rgb(9, 11, 85);
-*/
+.about-us-icon-box:hover {
+  border: 2px solid #3ac162;
+}
