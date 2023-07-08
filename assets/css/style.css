@@ -819,6 +819,7 @@ section {
   margin-bottom: 20px;
   background: #fff;
   border: 1px solid #eef0ef;
+  transition: transform 0.3s ease;
 }
 
 .trainers .member img {
@@ -865,6 +866,41 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
+
+.trainers .member:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------- */
+/* Faculty info */
+/* ------------------------------------------------------------- */
+.member-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.member-card-image {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.member-card-image img {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.member-card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
