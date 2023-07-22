@@ -293,15 +293,15 @@
               <img src="" class="img-fluid" alt="">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4></h4>
+                  <h4><a href=""></a></h4>
                   <p class="course-price"></p>
                 </div>
 
                 <h3><a href=""></a></h3>
-                <p class="eligibility"></p>
+                <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
-                <p class="duration"></p>
+                <p class="duration"></p> -->
 
               </div>
             </div>
@@ -313,15 +313,15 @@
               <img src="" class="img-fluid" alt="">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4></h4>
+                  <h4><a href=""></a></h4>
                   <p class="course-price"></p>
                 </div>
 
                 <h3><a href=""></a></h3>
-                <p class="eligibility"></p>
+                <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
-                <p class="duration"></p>
+                <p class="duration"></p> -->
 
               </div>
             </div>
@@ -333,15 +333,15 @@
               <img src="" class="img-fluid" alt="">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4></h4>
+                  <h4><a href=""></a></h4>
                   <p class="course-price"></p>
                 </div>
 
                 <h3><a href=""></a></h3>
-                <p class="eligibility"></p>
+                <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
-                <p class="duration"></p>
+                <p class="duration"></p> -->
 
               </div>
             </div>
@@ -353,15 +353,15 @@
               <img src="" class="img-fluid" alt="">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4></h4>
+                  <h4><a href=""></a></h4>
                   <p class="course-price"></p>
                 </div>
 
                 <h3><a href=""></a></h3>
-                <p class="eligibility"></p>
+                <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
-                <p class="duration"></p>
+                <p class="duration"></p> -->
 
               </div>
             </div>
@@ -373,15 +373,15 @@
               <img src="" class="img-fluid" alt="">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4></h4>
+                  <h4><a href=""></a></h4>
                   <p class="course-price"></p>
                 </div>
 
                 <h3><a href=""></a></h3>
-                <p class="eligibility"></p>
+                <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
-                <p class="duration"></p>
+                <p class="duration"></p> -->
 
               </div>
             </div>
@@ -457,24 +457,26 @@
 
           const courseName = item.querySelector("h4");
           courseName.textContent = course.courseName;
+          courseName.href = `course-details.html#course-${course.courseName}`;
 
           const courseTitle = item.querySelector("h3 a");
           courseTitle.textContent = course.courseName;
+          courseTitle.href = `course-details.html#course-${course.courseName}`;
 
-          const eligibility = item.querySelector(".eligibility");
-          eligibility.textContent = course.eligibility;
+          // const eligibility = item.querySelector(".eligibility");
+          // eligibility.textContent = course.eligibility;
 
-          const description = item.querySelector(".description");
-          description.textContent = course.description;
+          // const description = item.querySelector(".description");
+          // description.textContent = course.description;
 
-          const yearStarted = item.querySelector(".year-started");
-          yearStarted.textContent = `Year Started: ${course.yearStarted}`;
+          // const yearStarted = item.querySelector(".year-started");
+          // yearStarted.textContent = `Year Started: ${course.yearStarted}`;
 
-          const coursePrice = item.querySelector(".course-price");
-          coursePrice.textContent = course.price;
+          // const coursePrice = item.querySelector(".course-price");
+          // coursePrice.textContent = course.price;
 
-          const duration = item.querySelector(".duration");
-          duration.textContent = `Duration: ${course.duration}`;
+          // const duration = item.querySelector(".duration");
+          // duration.textContent = `Duration: ${course.duration}`;
         });
       }
 
