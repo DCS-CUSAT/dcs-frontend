@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -89,12 +91,13 @@
     <div class="breadcrumbs">
       <div class="container">
         <h2>Courses</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit
+          quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
       </div>
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= Courses Section ======= -->
-    <section id="courses" class="courses">
+    <!-- <section id="courses" class="courses">
       <div class="container" data-aos="fade-up">
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
@@ -109,7 +112,8 @@
                 </div>
 
                 <h3><a href="course-details.html">Website Design</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem
+                  tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
@@ -123,7 +127,7 @@
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
@@ -135,7 +139,8 @@
                 </div>
 
                 <h3><a href="course-details.html">Search Engine Optimization</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem
+                  tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
@@ -149,7 +154,7 @@
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div> 
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="course-item">
@@ -161,7 +166,8 @@
                 </div>
 
                 <h3><a href="course-details.html">Copywriting</a></h3>
-                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
+                <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem
+                  tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
                     <img src="assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
@@ -175,12 +181,296 @@
                 </div>
               </div>
             </div>
-          </div> <!-- End Course Item-->
+          </div> 
+
+        </div>
+
+      </div>
+      <script>
+        const courses = [
+          {
+            courseName: "Course 1",
+            eligibility: "Eligibility criteria for Course 1",
+            description: "Description for Course 1",
+            fees: "₹25000",
+            yearStarted: 2021,
+            duration: "2 years",
+            coverImgPath: "assets/img/course-1.jpg"
+          },
+          {
+            courseName: "Course 2",
+            eligibility: "Eligibility criteria for Course 2",
+            description: "Description for Course 2",
+            fees: "₹25000",
+            yearStarted: 2021,
+            duration: "2 years",
+            coverImgPath: "assets/img/course-1.jpg"
+          },
+          {
+            courseName: "Course 3",
+            eligibility: "Eligibility criteria for Course 3",
+            description: "Description for Course 3",
+            fees: "₹25000",
+            yearStarted: 2021,
+            duration: "2 years",
+            coverImgPath: "assets/img/course-1.jpg"
+          },
+          {
+            courseName: "Course 4",
+            eligibility: "Eligibility criteria for Course 4",
+            description: "Description for Course 4",
+            fees: "₹25000",
+            yearStarted: 2021,
+            duration: "2 years",
+            coverImgPath: "assets/img/course-1.jpg"
+          },
+          {
+            courseName: "Course 5",
+            eligibility: "Eligibility criteria for Course 5",
+            description: "Description for Course 5",
+            fees: "₹25000",
+            yearStarted: 2021,
+            duration: "2 years",
+            coverImgPath: "assets/img/course-1.jpg"
+          }
+        ];
+        function setupCourseCards() {
+          const courseItems = document.querySelectorAll(".course-item");
+
+          courseItems.forEach((item, index) => {
+            const course = courses[index];
+
+            const courseImg = item.querySelector("img");
+            courseImg.src = course.coverImgPath;
+            courseImg.alt = `Course ${index + 1}`;
+
+            const courseName = item.querySelector("h4");
+            courseName.textContent = course.courseName;
+
+            const courseTitle = item.querySelector("h3 a");
+            courseTitle.textContent = course.courseName;
+
+            const eligibility = item.querySelector("p:nth-of-type(1)");
+            eligibility.textContent = course.eligibility;
+
+            const description = item.querySelector("p:nth-of-type(2)");
+            description.textContent = course.description;
+
+            const fees = item.querySelector("p.price");
+            fees.textContent = course.fees;
+
+            const yearStarted = item.querySelector("p:nth-of-type(3)");
+            yearStarted.textContent = `Year Started: ${course.yearStarted}`;
+
+            const duration = item.querySelector("p:nth-of-type(4)");
+            duration.textContent = `Duration: ${course.duration}`;
+          });
+        }
+        setupCourseCards();
+      </script>
+
+    </section> -->
+
+    <!-- ======= Courses Section ======= -->
+    <section id="courses" class="courses">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+          <!-- Course Item 1 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="" class="img-fluid" alt="">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4></h4>
+                  <p class="course-price"></p>
+                </div>
+
+                <h3><a href=""></a></h3>
+                <p class="eligibility"></p>
+                <p class="description"></p>
+                <p class="year-started"></p>
+                <p class="duration"></p>
+
+              </div>
+            </div>
+          </div> <!-- End Course Item 1 -->
+
+          <!-- Course Item 2 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="course-item">
+              <img src="" class="img-fluid" alt="">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4></h4>
+                  <p class="course-price"></p>
+                </div>
+
+                <h3><a href=""></a></h3>
+                <p class="eligibility"></p>
+                <p class="description"></p>
+                <p class="year-started"></p>
+                <p class="duration"></p>
+
+              </div>
+            </div>
+          </div> <!-- End Course Item 2 -->
+
+          <!-- Course Item 3 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="course-item">
+              <img src="" class="img-fluid" alt="">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4></h4>
+                  <p class="course-price"></p>
+                </div>
+
+                <h3><a href=""></a></h3>
+                <p class="eligibility"></p>
+                <p class="description"></p>
+                <p class="year-started"></p>
+                <p class="duration"></p>
+
+              </div>
+            </div>
+          </div> <!-- End Course Item 3 -->
+
+          <!-- Course Item 4 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="course-item">
+              <img src="" class="img-fluid" alt="">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4></h4>
+                  <p class="course-price"></p>
+                </div>
+
+                <h3><a href=""></a></h3>
+                <p class="eligibility"></p>
+                <p class="description"></p>
+                <p class="year-started"></p>
+                <p class="duration"></p>
+
+              </div>
+            </div>
+          </div> <!-- End Course Item 4 -->
+
+          <!-- Course Item 5 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="course-item">
+              <img src="" class="img-fluid" alt="">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4></h4>
+                  <p class="course-price"></p>
+                </div>
+
+                <h3><a href=""></a></h3>
+                <p class="eligibility"></p>
+                <p class="description"></p>
+                <p class="year-started"></p>
+                <p class="duration"></p>
+
+              </div>
+            </div>
+          </div> <!-- End Course Item 5 -->
 
         </div>
 
       </div>
     </section><!-- End Courses Section -->
+
+    <!-- 
+  Script to fetch courses from the database and display them on the page
+ -->
+
+    <script>
+      const courses = [
+        {
+          courseName: "Course 1",
+          eligibility: "Eligibility criteria for Course 1",
+          description: "Description for Course 1",
+          yearStarted: 2021,
+          duration: "2 years",
+          price: "₹25000",
+          coverImgPath: "assets/img/course-1.jpg"
+        },
+        {
+          courseName: "Course 2",
+          eligibility: "Eligibility criteria for Course 2",
+          description: "Description for Course 2",
+          yearStarted: 2021,
+          duration: "2 years",
+          price: "₹25000",
+          coverImgPath: "assets/img/course-2.jpg"
+        },
+        {
+          courseName: "Course 3",
+          eligibility: "Eligibility criteria for Course 3",
+          description: "Description for Course 3",
+          yearStarted: 2021,
+          duration: "2 years",
+          price: "₹25000",
+          coverImgPath: "assets/img/course-3.jpg"
+        },
+        {
+          courseName: "Course 4",
+          eligibility: "Eligibility criteria for Course 4",
+          description: "Description for Course 4",
+          yearStarted: 2021,
+          duration: "2 years",
+          price: "₹25000",
+          coverImgPath: "assets/img/course-2.jpg"
+        },
+        {
+          courseName: "Course 5",
+          eligibility: "Eligibility criteria for Course 5",
+          description: "Description for Course 5",
+          yearStarted: 2021,
+          duration: "2 years",
+          price: "₹25000",
+          coverImgPath: "assets/img/course-1.jpg"
+        }
+      ];
+
+      function setupCourseCards() {
+        const courseItems = document.querySelectorAll(".course-item");
+
+        courseItems.forEach((item, index) => {
+          const course = courses[index];
+
+          const courseImg = item.querySelector("img");
+          courseImg.src = course.coverImgPath;
+          courseImg.alt = course.courseName;
+
+          const courseName = item.querySelector("h4");
+          courseName.textContent = course.courseName;
+
+          const courseTitle = item.querySelector("h3 a");
+          courseTitle.textContent = course.courseName;
+
+          const eligibility = item.querySelector(".eligibility");
+          eligibility.textContent = course.eligibility;
+
+          const description = item.querySelector(".description");
+          description.textContent = course.description;
+
+          const yearStarted = item.querySelector(".year-started");
+          yearStarted.textContent = `Year Started: ${course.yearStarted}`;
+
+          const coursePrice = item.querySelector(".course-price");
+          coursePrice.textContent = course.price;
+
+          const duration = item.querySelector(".duration");
+          duration.textContent = `Duration: ${course.duration}`;
+        });
+      }
+
+      setupCourseCards();
+
+    </script>
 
   </main><!-- End #main -->
 
@@ -261,7 +551,8 @@
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
