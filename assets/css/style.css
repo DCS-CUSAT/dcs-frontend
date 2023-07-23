@@ -592,16 +592,16 @@ section {
   background: #3ac162;
   color: #fff;
 }
-.about .row{
+.about-page .row{
   display: block;
   width: 100%;
 }
 
-.about .content{
+.about-page .content{
   width: 100%;
-}
+} 
 
-.about .abt-img{
+.about-page .abt-img{
   padding-bottom: 18px;
   width: 100%;
 }
