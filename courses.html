@@ -4,18 +4,19 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Courses - Mentor Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Courses - Mentor Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -37,77 +38,94 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Mentor
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
   * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="courses.html">Courses</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>People</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="faculties.html ">Faculties</a></li>
+                <li><a href="staff.html" class="active">staff</a></li>
+              </ul>
+            </li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
 
-      <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <li class="dropdown">
+              <a href="#"
+                ><span>Drop Down</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Drop Down</span>
+                    <i class="bi bi-chevron-right"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="courses.html">Courses</a></li>
-          <li><a href="trainers.html">Trainers</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="courses.html" class="get-started-btn">Get Started</a>
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main" data-aos="fade-in">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
-      <div class="container">
-        <h2>Courses</h2>
-        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit
-          quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+        <a href="courses.html" class="get-started-btn">Get Started</a>
       </div>
-    </div><!-- End Breadcrumbs -->
+    </header>
+    <!-- End Header -->
 
-    <!-- ======= Courses Section ======= -->
-    <!-- <section id="courses" class="courses">
+    <main id="main" data-aos="fade-in">
+      <!-- ======= Breadcrumbs ======= -->
+      <div class="breadcrumbs">
+        <div class="container">
+          <h2>Courses</h2>
+          <p>
+            Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
+            Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis
+            ipsam aperiam consequatur laboriosam nemo harum praesentium.
+          </p>
+        </div>
+      </div>
+      <!-- End Breadcrumbs -->
+
+      <!-- ======= Courses Section ======= -->
+      <!-- <section id="courses" class="courses">
       <div class="container" data-aos="fade-up">
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
@@ -281,301 +299,341 @@
 
     </section> -->
 
-    <!-- ======= Courses Section ======= -->
-    <section id="courses" class="courses">
-      <div class="container" data-aos="fade-up">
+      <!-- ======= Courses Section ======= -->
+      <section id="courses" class="courses">
+        <div class="container" data-aos="fade-up">
+          <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <!-- Course Item 1 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="course-item">
+                <img src="" class="img-fluid" alt="" />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <h4><a href=""></a></h4>
+                    <p class="course-price"></p>
+                  </div>
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-
-          <!-- Course Item 1 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="course-item">
-              <img src="" class="img-fluid" alt="">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4><a href=""></a></h4>
-                  <p class="course-price"></p>
-                </div>
-
-                <h3><a href=""></a></h3>
-                <!-- <p class="eligibility"></p>
+                  <h3><a href=""></a></h3>
+                  <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
                 <p class="duration"></p> -->
-
+                </div>
               </div>
             </div>
-          </div> <!-- End Course Item 1 -->
+            <!-- End Course Item 1 -->
 
-          <!-- Course Item 2 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="course-item">
-              <img src="" class="img-fluid" alt="">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4><a href=""></a></h4>
-                  <p class="course-price"></p>
-                </div>
+            <!-- Course Item 2 -->
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            >
+              <div class="course-item">
+                <img src="" class="img-fluid" alt="" />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <h4><a href=""></a></h4>
+                    <p class="course-price"></p>
+                  </div>
 
-                <h3><a href=""></a></h3>
-                <!-- <p class="eligibility"></p>
+                  <h3><a href=""></a></h3>
+                  <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
                 <p class="duration"></p> -->
-
+                </div>
               </div>
             </div>
-          </div> <!-- End Course Item 2 -->
+            <!-- End Course Item 2 -->
 
-          <!-- Course Item 3 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="course-item">
-              <img src="" class="img-fluid" alt="">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4><a href=""></a></h4>
-                  <p class="course-price"></p>
-                </div>
+            <!-- Course Item 3 -->
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+            >
+              <div class="course-item">
+                <img src="" class="img-fluid" alt="" />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <h4><a href=""></a></h4>
+                    <p class="course-price"></p>
+                  </div>
 
-                <h3><a href=""></a></h3>
-                <!-- <p class="eligibility"></p>
+                  <h3><a href=""></a></h3>
+                  <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
                 <p class="duration"></p> -->
-
+                </div>
               </div>
             </div>
-          </div> <!-- End Course Item 3 -->
+            <!-- End Course Item 3 -->
 
-          <!-- Course Item 4 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="course-item">
-              <img src="" class="img-fluid" alt="">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4><a href=""></a></h4>
-                  <p class="course-price"></p>
-                </div>
+            <!-- Course Item 4 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+              <div class="course-item">
+                <img src="" class="img-fluid" alt="" />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <h4><a href=""></a></h4>
+                    <p class="course-price"></p>
+                  </div>
 
-                <h3><a href=""></a></h3>
-                <!-- <p class="eligibility"></p>
+                  <h3><a href=""></a></h3>
+                  <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
                 <p class="duration"></p> -->
-
+                </div>
               </div>
             </div>
-          </div> <!-- End Course Item 4 -->
+            <!-- End Course Item 4 -->
 
-          <!-- Course Item 5 -->
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="course-item">
-              <img src="" class="img-fluid" alt="">
-              <div class="course-content">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <h4><a href=""></a></h4>
-                  <p class="course-price"></p>
-                </div>
+            <!-- Course Item 5 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+              <div class="course-item">
+                <img src="" class="img-fluid" alt="" />
+                <div class="course-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <h4><a href=""></a></h4>
+                    <p class="course-price"></p>
+                  </div>
 
-                <h3><a href=""></a></h3>
-                <!-- <p class="eligibility"></p>
+                  <h3><a href=""></a></h3>
+                  <!-- <p class="eligibility"></p>
                 <p class="description"></p>
                 <p class="year-started"></p>
                 <p class="duration"></p> -->
-
+                </div>
               </div>
             </div>
-          </div> <!-- End Course Item 5 -->
-
+            <!-- End Course Item 5 -->
+          </div>
         </div>
+      </section>
+      <!-- End Courses Section -->
 
-      </div>
-    </section><!-- End Courses Section -->
-
-    <!-- 
+      <!-- 
   Script to fetch courses from the database and display them on the page
  -->
 
-    <script>
-      const courses = [
-        {
-          courseName: "Course 1",
-          eligibility: "Eligibility criteria for Course 1",
-          description: "Description for Course 1",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-1.jpg"
-        },
-        {
-          courseName: "Course 2",
-          eligibility: "Eligibility criteria for Course 2",
-          description: "Description for Course 2",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-2.jpg"
-        },
-        {
-          courseName: "Course 3",
-          eligibility: "Eligibility criteria for Course 3",
-          description: "Description for Course 3",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-3.jpg"
-        },
-        {
-          courseName: "Course 4",
-          eligibility: "Eligibility criteria for Course 4",
-          description: "Description for Course 4",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-2.jpg"
-        },
-        {
-          courseName: "Course 5",
-          eligibility: "Eligibility criteria for Course 5",
-          description: "Description for Course 5",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-1.jpg"
+      <script>
+        const courses = [
+          {
+            courseName: "Course 1",
+            eligibility: "Eligibility criteria for Course 1",
+            description: "Description for Course 1",
+            yearStarted: 2021,
+            duration: "2 years",
+            price: "₹25000",
+            coverImgPath: "assets/img/course-1.jpg",
+          },
+          {
+            courseName: "Course 2",
+            eligibility: "Eligibility criteria for Course 2",
+            description: "Description for Course 2",
+            yearStarted: 2021,
+            duration: "2 years",
+            price: "₹25000",
+            coverImgPath: "assets/img/course-2.jpg",
+          },
+          {
+            courseName: "Course 3",
+            eligibility: "Eligibility criteria for Course 3",
+            description: "Description for Course 3",
+            yearStarted: 2021,
+            duration: "2 years",
+            price: "₹25000",
+            coverImgPath: "assets/img/course-3.jpg",
+          },
+          {
+            courseName: "Course 4",
+            eligibility: "Eligibility criteria for Course 4",
+            description: "Description for Course 4",
+            yearStarted: 2021,
+            duration: "2 years",
+            price: "₹25000",
+            coverImgPath: "assets/img/course-2.jpg",
+          },
+          {
+            courseName: "Course 5",
+            eligibility: "Eligibility criteria for Course 5",
+            description: "Description for Course 5",
+            yearStarted: 2021,
+            duration: "2 years",
+            price: "₹25000",
+            coverImgPath: "assets/img/course-1.jpg",
+          },
+        ];
+
+        function setupCourseCards() {
+          const courseItems = document.querySelectorAll(".course-item");
+
+          courseItems.forEach((item, index) => {
+            const course = courses[index];
+
+            const courseImg = item.querySelector("img");
+            courseImg.src = course.coverImgPath;
+            courseImg.alt = course.courseName;
+
+            const courseName = item.querySelector("h4");
+            courseName.textContent = course.courseName;
+            courseName.href = `course-details.html#course-${course.courseName}`;
+
+            const courseTitle = item.querySelector("h3 a");
+            courseTitle.textContent = course.courseName;
+            courseTitle.href = `course-details.html#course-${course.courseName}`;
+
+            // const eligibility = item.querySelector(".eligibility");
+            // eligibility.textContent = course.eligibility;
+
+            // const description = item.querySelector(".description");
+            // description.textContent = course.description;
+
+            // const yearStarted = item.querySelector(".year-started");
+            // yearStarted.textContent = `Year Started: ${course.yearStarted}`;
+
+            // const coursePrice = item.querySelector(".course-price");
+            // coursePrice.textContent = course.price;
+
+            // const duration = item.querySelector(".duration");
+            // duration.textContent = `Duration: ${course.duration}`;
+          });
         }
-      ];
 
-      function setupCourseCards() {
-        const courseItems = document.querySelectorAll(".course-item");
+        setupCourseCards();
+      </script>
+    </main>
+    <!-- End #main -->
 
-        courseItems.forEach((item, index) => {
-          const course = courses[index];
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>Mentor</h3>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
 
-          const courseImg = item.querySelector("img");
-          courseImg.src = course.coverImgPath;
-          courseImg.alt = course.courseName;
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
 
-          const courseName = item.querySelector("h4");
-          courseName.textContent = course.courseName;
-          courseName.href = `course-details.html#course-${course.courseName}`;
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div>
 
-          const courseTitle = item.querySelector("h3 a");
-          courseTitle.textContent = course.courseName;
-          courseTitle.href = `course-details.html#course-${course.courseName}`;
-
-          // const eligibility = item.querySelector(".eligibility");
-          // eligibility.textContent = course.eligibility;
-
-          // const description = item.querySelector(".description");
-          // description.textContent = course.description;
-
-          // const yearStarted = item.querySelector(".year-started");
-          // yearStarted.textContent = `Year Started: ${course.yearStarted}`;
-
-          // const coursePrice = item.querySelector(".course-price");
-          // coursePrice.textContent = course.price;
-
-          // const duration = item.querySelector(".duration");
-          // duration.textContent = `Duration: ${course.duration}`;
-        });
-      }
-
-      setupCourseCards();
-
-    </script>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Mentor</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Join Our Newsletter</h4>
+              <p>
+                Tamen quem nulla quae legam multos aute sint culpa legam noster
+                magna
+              </p>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
         </div>
       </div>
-    </div>
 
-    <div class="container d-md-flex py-4">
-
-      <div class="me-md-auto text-center text-md-start">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
+      <div class="container d-md-flex py-4">
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Mentor</span></strong
+            >. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
