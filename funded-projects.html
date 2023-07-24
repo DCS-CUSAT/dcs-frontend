@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Course Details - Mentor Bootstrap Template</title>
+  <title>Funded Projects</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -42,66 +42,117 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container d-flex align-items-center">
-        <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="courses.html">Courses</a></li>
-            <li class="dropdown">
-              <a href="#"><span>People</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="faculties.html ">Faculties</a></li>
-                <li><a href="staff.html">staff</a></li>
-              </ul>
-            </li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li class="dropdown">
+            <a href="#"><span>People</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="faculties.html ">Faculties</a></li>
+              <li><a href="staff.html">staff</a></li>
+            </ul>
+          </li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
 
-            <li class="dropdown">
-              <a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown">
-                  <a href="#"><span>Deep Drop Down</span>
-                    <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
+          <li class="dropdown">
+            <a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown">
+                <a href="#"><span>Deep Drop Down</span>
+                  <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
 
-        <a href="courses.html" class="get-started-btn">Get Started</a>
-      </div>
-    </header>
-    <!-- End Header -->
+      <a href="courses.html" class="get-started-btn">Get Started</a>
+    </div>
   </header>
   <!-- End Header -->
 
+  <style>
+    .funded-projects {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project h2 {
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      /* Added margin to create gap between table and project header */
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      /* Align table data to the left */
+    }
+
+    th {
+      background-color: #f2f2f2;
+      /* Light gray background for table headers */
+    }
+
+    /* Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+      .project {
+        padding: 5px;
+        /* Reduce padding for smaller screens */
+      }
+
+      th,
+      td {
+        padding: 8px;
+        /* Reduce padding for smaller screens */
+      }
+    }
+  </style>
+
   <main id="main">
-    <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Course Details</h2>
+        <h2>Funded Projects</h2>
         <p>
           Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
           Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis
@@ -109,107 +160,114 @@
         </p>
       </div>
     </div>
-    <!-- End Breadcrumbs -->
-    <!-- ======= Cource Details Section ======= -->
-    <section id="course-details" class="course-details">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 course-1">
-            <!-- Course 1 details will be added here -->
-          </div>
-          <div class="col-md-4 course-2">
-            <!-- Course 2 details will be added here -->
-          </div>
-          <div class="col-md-4 course-3">
-            <!-- Course 3 details will be added here -->
-          </div>
-          <div class="col-md-4 course-4">
-            <!-- Course 4 details will be added here -->
-          </div>
-          <div class="col-md-4 course-5">
-            <!-- Course 5 details will be added here -->
-          </div>
+    <section>
+      <div class="funded-projects">
+        <div class="project">
+          <h2>Researcher: John Doe</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width: 60%;">Project</th>
+                <th style="width: 30%;">Funding Agency</th>
+                <th style="width: 10%;">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem Ipsum Project 1</td>
+                <td>Funding Agency A</td>
+                <td>$100,000</td>
+              </tr>
+              <tr>
+                <td>Lorem Ipsum Project 2</td>
+                <td>Funding Agency B</td>
+                <td>$50,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="project">
+          <h2>Researcher: Jane Smith</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width: 60%;">Project</th>
+                <th style="width: 30%;">Funding Agency</th>
+                <th style="width: 10%;">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem Ipsum Project 3</td>
+                <td>Funding Agency C</td>
+                <td>$200,000</td>
+              </tr>
+              <tr>
+                <td>Lorem Ipsum Project 4</td>
+                <td>Funding Agency D</td>
+                <td>$1 million</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="project">
+          <h2>Researcher: Michael Johnson</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width: 60%;">Project</th>
+                <th style="width: 30%;">Funding Agency</th>
+                <th style="width: 10%;">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem Ipsum Project 5</td>
+                <td>Funding Agency E</td>
+                <td>$5 million</td>
+              </tr>
+              <tr>
+                <td>Lorem Ipsum Project 6</td>
+                <td>Funding Agency F</td>
+                <td>$3 million</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="project">
+          <h2>Researcher: Emily Brown</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width: 60%;">Project</th>
+                <th style="width: 30%;">Funding Agency</th>
+                <th style="width: 10%;">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lorem Ipsum Project 7</td>
+                <td>Funding Agency G</td>
+                <td>$10 million</td>
+              </tr>
+              <tr>
+                <td>Lorem Ipsum Project 8</td>
+                <td>Funding Agency H</td>
+                <td>$50 million</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
-    <script>
-      const courses = [
-        {
-          courseName: "Course 1",
-          eligibility: "Eligibility criteria for Course 1",
-          description: "Description for Course 1",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-1.jpg"
-        },
-        {
-          courseName: "Course 2",
-          eligibility: "Eligibility criteria for Course 2",
-          description: "Description for Course 2",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-2.jpg"
-        },
-        {
-          courseName: "Course 3",
-          eligibility: "Eligibility criteria for Course 3",
-          description: "Description for Course 3",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-3.jpg"
-        },
-        {
-          courseName: "Course 4",
-          eligibility: "Eligibility criteria for Course 4",
-          description: "Description for Course 4",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-2.jpg"
-        },
-        {
-          courseName: "Course 5",
-          eligibility: "Eligibility criteria for Course 5",
-          description: "Description for Course 5",
-          yearStarted: 2021,
-          duration: "2 years",
-          price: "₹25000",
-          coverImgPath: "assets/img/course-1.jpg"
-        }
-      ];
-
-      // Function to create course details elements
-      function createCourseElement(course) {
-        return `
-          <div class="card mb-4">
-            <img src="${course.coverImgPath}" class="card-img-top" alt="Course Image">
-            <div class="card-body">
-              <h5 class="card-title">${course.courseName}</h5>
-              <p class="card-text">${course.description}</p>
-              <ul>
-                <li><strong>Eligibility:</strong> ${course.eligibility}</li>
-                <li><strong>Duration:</strong> ${course.duration}</li>
-                <li><strong>Price:</strong> ${course.price}</li>
-              </ul>
-            </div>
-          </div>
-        `;
-      }
-
-      // Get references to course divs and populate them with course details
-      const courseDivs = document.querySelectorAll('.course-details .col-md-4');
-      for (let i = 0; i < courses.length; i++) {
-        courseDivs[i].innerHTML = createCourseElement(courses[i]);
-      }
-    </script>
-
-    <!-- End Cource Details Tabs Section -->
   </main>
+
   <!-- End #main -->
 
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
