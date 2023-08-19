@@ -113,12 +113,8 @@
       <!-- ======= Breadcrumbs ======= -->
       <div class="breadcrumbs" data-aos="fade-in">
         <div class="container">
-          <h2>Course Details</h2>
-          <p>
-            Est dolorum ut non facere possimus quibusdam eligendi voluptatem.
-            Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis
-            ipsam aperiam consequatur laboriosam nemo harum praesentium.
-          </p>
+          <h2>{{course_name}}</h2>
+
         </div>
       </div>
       <!-- End Breadcrumbs -->
@@ -126,25 +122,41 @@
       <section id="course-details" class="course-details">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 course-1">
-              <!-- Course 1 details will be added here -->
-            </div>
-            <div class="col-md-4 course-2">
-              <!-- Course 2 details will be added here -->
-            </div>
-            <div class="col-md-4 course-3">
-              <!-- Course 3 details will be added here -->
-            </div>
-            <div class="col-md-4 course-4">
-              <!-- Course 4 details will be added here -->
-            </div>
-            <div class="col-md-4 course-5">
-              <!-- Course 5 details will be added here -->
+            <div class="col-12">
+              <div class="card mb-4">
+                <!-- <img src="assets/img/course-1.jpg" class="card-img-top" alt="Course Image"> -->
+                <div class="card-body">
+                  <h5 class="card-title">${course.courseName}</h5>
+                  <p class="card-text">${course.description}</p>
+                  <ul>
+                    <li><strong>Eligibility:</strong> ${course.eligibility}</li>
+                    <li><strong>Duration:</strong> ${course.duration}</li>
+                    <li><strong>Price:</strong> ${course.price}</li>
+                  </ul>
+                  <div>
+                    <div>
+                      <h5>Timetable</h5>
+                      <button type="button" class="btn btn-primary">S1</button>
+                      <button type="button" class="btn btn-primary">S2</button>
+                      <button type="button" class="btn btn-primary">S3</button>
+                      <button type="button" class="btn btn-primary">S4</button>
+                    </div>
+
+                    <div class="mt-4">
+                      <h5>Program Structure</h5>
+                      <button type="button" class="btn btn-primary">S1</button>
+                      <button type="button" class="btn btn-primary">S2</button>
+                      <button type="button" class="btn btn-primary">S3</button>
+                      <button type="button" class="btn btn-primary">S4</button>
+                    </div>
+                  </div>
+                </div>
+              </div>            
             </div>
           </div>
         </div>
       </section>
-      <script>
+      <!-- <script>
         const courses = [
           {
             courseName: "Course 1",
@@ -213,12 +225,12 @@
 
         // Get references to course divs and populate them with course details
         const courseDivs = document.querySelectorAll(
-          ".course-details .col-md-4"
+          ".course-details .col-12"
         );
         for (let i = 0; i < courses.length; i++) {
           courseDivs[i].innerHTML = createCourseElement(courses[i]);
         }
-      </script>
+      </script> -->
 
       <!-- End Cource Details Tabs Section -->
     </main>
